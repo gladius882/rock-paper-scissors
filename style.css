@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.player-side {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.player-choice {
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-choice img {
+    width: 280px;
+}
