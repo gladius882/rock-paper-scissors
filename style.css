@@ -12,11 +12,27 @@ body {
 
 .player-choice {
     width: 300px;
+    border: 5px solid grey;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    cursor: pointer;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.player-choice img {
+    transition-duration: 0.5s;
+}
+
+.player-choice:hover {
+    border: 5px solid blue;
+}
+
+.player-choice:hover img {
+    scale: 1.1;
 }
 
 .player-choice img {
