@@ -12,3 +12,17 @@ function getRandomInteger(min, max)
 
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+let currentChoice = false;
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    let choices = document.getElementsByClassName('player-choice');
+
+    for(let i=0; i<choices.length; i++) {
+        choices[i].addEventListener('click', function(event) {
+            
+        });
+    }
+
+});
