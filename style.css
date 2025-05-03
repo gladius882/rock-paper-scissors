@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url('img/bg.png');
 }
 
 .player-side {
@@ -12,7 +13,7 @@ body {
 
 .player-choice {
     width: 300px;
-    border: 5px solid grey;
+    border: 5px solid blue;
     border-radius: 20px;
     transition-duration: 0.5s;
     cursor: pointer;
@@ -28,7 +29,7 @@ body {
 }
 
 .player-choice:hover {
-    border: 5px solid blue;
+    border: 5px solid green;
 }
 
 .player-choice:hover img {
