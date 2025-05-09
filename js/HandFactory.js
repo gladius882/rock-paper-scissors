@@ -7,4 +7,10 @@ class HandFactory {
             default: throw new Error('Unknows hand type: ${type}');
         }
     }
+
+    static getRandomHand() {
+        const types = Object.values(HandType);
+        const randomType = types[Math.floor(Math.random() * types.length)];
+        return this.create(randomType);
+    }
 }
