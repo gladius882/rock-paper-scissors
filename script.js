@@ -1,31 +1,9 @@
-const hands = ['rock', 'paper', 'scissors'];
-
-
-function getComputerChoice()
-{
-    let hand = hands[getRandomInteger(0, 2)];
-    return HandFactory.create(hand);
-}
-
-function getRandomInteger(min, max)
-{
-    min = Math.ceil(min);
-    max = Math.floor(max);
-
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 function onHandChoice(event)
 {
     let id = event.currentTarget.id;
 
-    if(hands.includes(id) === false) {
-        alert('Error');
-        return;
-    }
-
     let playerHand = HandFactory.create(id);
-    let computerHand = getComputerChoice();
+    let computerHand = HandFactory.getRandomHand();
 
     console.log(playerHand);
     console.log(computerHand);
