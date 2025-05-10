@@ -41,8 +41,6 @@ function onHandChoice(event) {
 
 }
 
-let currentChoice = false;
-
 document.addEventListener('DOMContentLoaded', function () {
 
     let choices = document.getElementsByClassName('selectable');
