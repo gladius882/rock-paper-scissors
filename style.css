@@ -11,7 +11,7 @@ body {
     gap: 30px;
 }
 
-.player-choice {
+.hand-tile {
     width: 300px;
     border: 5px solid blue;
     border-radius: 20px;
@@ -24,18 +24,18 @@ body {
     align-items: center;
 }
 
-.player-choice img {
+.player-hand-tile img {
     transition-duration: 0.5s;
 }
 
-.player-choice:hover {
+.hand-tile:hover {
     border: 5px solid green;
 }
 
-.player-choice:hover img {
+.hand-tile:hover img {
     scale: 1.1;
 }
 
-.player-choice img {
+.hand-tile img {
     width: 280px;
 }
