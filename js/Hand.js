@@ -3,8 +3,8 @@ import { GameState } from "./GameState.js"
 export class Hand {
     constructor(name, winsWith, loosesWith) {
         this.name = name;
-        this.loosesWith = winsWith;
-        this.winsWith = loosesWith;
+        this.loosesWith = loosesWith;
+        this.winsWith = winsWith;
     }
 
     gameResultWith(otherHand) {
