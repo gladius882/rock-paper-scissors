@@ -5,10 +5,42 @@ body {
     background-image: url('img/bg.png');
 }
 
-.player-side {
+.player-side, .computer-side {
     display: flex;
     justify-content: center;
     gap: 30px;
+}
+
+.game-result {
+    border-radius: 10px;
+    background: linear-gradient(#555, #777);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+.game-result p {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.game-result p:nth-child(2) {
+    text-align: center;
+}
+
+.game-result p:first-child {
+    text-align: left;
+}
+
+.game-result p:last-child {
+    text-align: right;
+}
+
+.game-result p:first-child, .game-result p:last-child {
+    width: 300px;
 }
 
 .hand-tile {
@@ -16,7 +48,6 @@ body {
     border: 5px solid blue;
     border-radius: 20px;
     transition-duration: 0.5s;
-    cursor: pointer;
 
     display: flex;
     flex-direction: column;
@@ -24,18 +55,24 @@ body {
     align-items: center;
 }
 
-.player-hand-tile img {
+.hand-tile img {
     transition-duration: 0.5s;
-}
-
-.hand-tile:hover {
-    border: 5px solid green;
-}
-
-.hand-tile:hover img {
-    scale: 1.1;
 }
 
 .hand-tile img {
     width: 280px;
 }
+
+
+.selectable {
+    cursor: pointer;
+}
+
+.selectable:hover {
+    border: 5px solid green;
+}
+
+.selectable:hover img {
+    scale: 1.1;
+}
+

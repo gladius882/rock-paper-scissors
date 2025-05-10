@@ -17,7 +17,7 @@ let currentChoice = false;
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    let choices = document.getElementsByClassName('player-choice');
+    let choices = document.getElementsByClassName('selectable');
 
     for (let i = 0; i < choices.length; i++) {
         choices[i].addEventListener('click', onHandChoice);
