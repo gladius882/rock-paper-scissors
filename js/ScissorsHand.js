@@ -1,4 +1,7 @@
-class ScissorsHand extends Hand {
+import { Hand } from "./Hand.js"
+import { HandType } from "./HandType.js"
+
+export class ScissorsHand extends Hand {
     constructor() {
         super(
             HandType.SCISSORS,

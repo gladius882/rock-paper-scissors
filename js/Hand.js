@@ -1,4 +1,6 @@
-class Hand {
+import { GameState } from "./GameState.js"
+
+export class Hand {
     constructor(name, winsWith, loosesWith) {
         this.name = name;
         this.loosesWith = winsWith;
@@ -6,8 +8,8 @@ class Hand {
     }
 
     gameResultWith(otherHand) {
-        if(otherHand.name == this.name) return GameState.DRAW;
-        if(otherHand.name == this.loosesWith) return GameState.LOSE;
-        if(otherHand.name == this.winsWith) return GameState.WIN;
+        if (otherHand.name == this.name) return GameState.DRAW;
+        if (otherHand.name == this.loosesWith) return GameState.LOSE;
+        if (otherHand.name == this.winsWith) return GameState.WIN;
     }
 }

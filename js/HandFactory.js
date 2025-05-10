@@ -1,6 +1,11 @@
-class HandFactory {
+import { RockHand } from "./RockHand.js"
+import { PaperHand } from "./PaperHand.js"
+import { ScissorsHand } from "./ScissorsHand.js";
+import { HandType } from "./HandType.js"
+
+export class HandFactory {
     static create(type) {
-        switch(type) {
+        switch (type) {
             case HandType.ROCK: return new RockHand();
             case HandType.PAPER: return new PaperHand();
             case HandType.SCISSORS: return new ScissorsHand();

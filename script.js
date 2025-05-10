@@ -1,5 +1,7 @@
-function onHandChoice(event)
-{
+import { HandFactory } from "./js/HandFactory.js"
+
+
+function onHandChoice(event) {
     let id = event.currentTarget.id;
 
     let playerHand = HandFactory.create(id);
@@ -17,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let choices = document.getElementsByClassName('player-choice');
 
-    for(let i=0; i<choices.length; i++) {
+    for (let i = 0; i < choices.length; i++) {
         choices[i].addEventListener('click', onHandChoice);
     }
 });
